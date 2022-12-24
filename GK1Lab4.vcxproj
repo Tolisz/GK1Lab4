@@ -134,7 +134,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="3rdParty\include\glad.c" />
+    <ClCompile Include="src\callbacks.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\shader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\shaders\def.frag" />
+    <None Include="src\shaders\def.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\callbacks.h" />
+    <ClInclude Include="src\shader.h" />
+    <ClInclude Include="src\shader_interface.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
