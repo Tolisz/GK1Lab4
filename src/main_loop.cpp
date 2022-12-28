@@ -11,12 +11,12 @@
 
 void mainLoopBody(GLFWwindow* window)
 {
-    Shader shader("src/shaders/def.vert", "src/shaders/def.frag");
-    Shader bag_shader("src/shaders/bag.vert", "src/shaders/bag.frag");
+    Shader shader("shaders/def.vert", "shaders/def.frag");
+    Shader bag_shader("shaders/biplane.vert", "shaders/biplane.frag");
 
-    OPlatform test(10.0f);
+    OPlatform test(4.0f);
 
-    Model ourModel("objects/bag/bag.obj");
+    Model ourModel("objects/biplane/biplane.obj");
 
     glEnable(GL_DEPTH_TEST);
 
@@ -48,6 +48,11 @@ void mainLoopBody(GLFWwindow* window)
         
         bag_shader.use();
         
+        float scale = 0.01f;
+        model = glm::scale(model, glm::vec3(scale, scale, scale));
+        //model = glm::rotate(model, (float)glfwGetTime() / 2, glm::vec3(0.0, 1.0, 0.0));
+        //model = glm::translate(model, glm::vec3(5.0f * (1 / scale), 0.0f, 5.0f * (1/scale)));
+        //model = glm::rotate(model, (float)glfwGetTime() / 2, glm::vec3(0.0, 1.0, 0.0));
         bag_shader.setMat4("model", model);
         bag_shader.setMat4("view", view);
         bag_shader.setMat4("projection", projection);

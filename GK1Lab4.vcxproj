@@ -144,11 +144,13 @@
     <ClCompile Include="src\app.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="shaders\bag.frag" />
+    <None Include="shaders\bag.vert" />
+    <None Include="shaders\biplane.frag" />
+    <None Include="shaders\biplane.vert" />
+    <None Include="shaders\def.frag" />
+    <None Include="shaders\def.vert" />
     <None Include="src\objects\camera\camera_prop.fbx" />
-    <None Include="src\shaders\bag.frag" />
-    <None Include="src\shaders\bag.vert" />
-    <None Include="src\shaders\def.frag" />
-    <None Include="src\shaders\def.vert" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\app_modes.h" />
