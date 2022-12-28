@@ -1,9 +1,11 @@
 #include "callbacks.h"
 
-void processInput(GLFWwindow* window)
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+    {
         glfwSetWindowShouldClose(window, true);
+    }
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
