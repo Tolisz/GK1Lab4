@@ -3,16 +3,17 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-#include "shader_interface.h"
+//#include "shader_interface.h"
+#include "object_interface.h"
 
-class Platform
+class OPlatform //: public IObject
 {
 public:
 	
 	// constructors & deconstructors
-	Platform(const Platform&) = delete;
-	Platform(const float& a, const float& y = 0);
-	~Platform();
+	OPlatform(const OPlatform&) = delete;
+	OPlatform(const float& a, const float& y = 0);
+	~OPlatform();
 
 	// methods
 	template<typename Func>
@@ -38,7 +39,7 @@ private:
 
 
 template<class Func>
-void Platform::draw(const IShader& shader, Func shader_modifier)
+void OPlatform::draw(const IShader& shader, Func shader_modifier)
 {
 	shader.use();
 

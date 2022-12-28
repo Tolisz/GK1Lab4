@@ -135,9 +135,11 @@
   <ItemGroup>
     <ClCompile Include="3rdParty\include\glad.c" />
     <ClCompile Include="src\callbacks.cpp" />
+    <ClCompile Include="src\global.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\main_loop.cpp" />
-    <ClCompile Include="src\platform.cpp" />
+    <ClCompile Include="src\object_camera.cpp" />
+    <ClCompile Include="src\object_platform.cpp" />
     <ClCompile Include="src\shader.cpp" />
     <ClCompile Include="src\app.cpp" />
   </ItemGroup>
@@ -149,9 +151,11 @@
     <ClInclude Include="src\app_modes.h" />
     <ClInclude Include="src\callbacks.h" />
     <ClInclude Include="src\camera.h" />
+    <ClInclude Include="src\global.h" />
     <ClInclude Include="src\main_loop.h" />
+    <ClInclude Include="src\object_camera.h" />
     <ClInclude Include="src\object_interface.h" />
-    <ClInclude Include="src\platform.h" />
+    <ClInclude Include="src\object_platform.h" />
     <ClInclude Include="src\shader.h" />
     <ClInclude Include="src\shader_interface.h" />
     <ClInclude Include="src\app.h" />

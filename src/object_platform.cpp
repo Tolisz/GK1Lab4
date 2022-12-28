@@ -1,35 +1,35 @@
-#include "platform.h"
+#include "object_platform.h"
 
 #include <iostream>
 
-Platform::Platform(const float& a, const float& y) : m_a{ a }, m_y{ y }
+OPlatform::OPlatform(const float& a, const float& y) : m_a{ a }, m_y{ y }
 {
 	init();
 	fill();
 }
 
-void Platform::init()
+void OPlatform::init()
 {
 	glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
 	glGenBuffers(1, &EBO);
 }
 
-void Platform::fill()
+void OPlatform::fill()
 {
-	//GLfloat vertices[] = {
-	//	 m_a,  m_y, -m_a,	// 0 
-	//	 m_a,  m_y,  m_a,   // 1
-	//	-m_a,  m_y,  m_a,	// 2
-	//	-m_a,  m_y, -m_a	// 3
-	//};
-
-	float vertices[] = {
-		 0.5f,  0.5f, 0.0f,  // top right
-		 0.5f, -0.5f, 0.0f,  // bottom right
-		-0.5f, -0.5f, 0.0f,  // bottom left
-		-0.5f,  0.5f, 0.0f   // top left 
+	GLfloat vertices[] = {
+		 m_a,  m_y, -m_a,	// 0 
+		 m_a,  m_y,  m_a,   // 1
+		-m_a,  m_y,  m_a,	// 2
+		-m_a,  m_y, -m_a	// 3
 	};
+
+	//float vertices[] = {
+	//	 0.5f,  0.5f, 0.0f,  // top right
+	//	 0.5f, -0.5f, 0.0f,  // bottom right
+	//	-0.5f, -0.5f, 0.0f,  // bottom left
+	//	-0.5f,  0.5f, 0.0f   // top left 
+	//};
 
 	GLuint indices[] = {
 		0, 1, 2,
@@ -51,7 +51,7 @@ void Platform::fill()
 	glBindVertexArray(0);
 }
 
-void Platform::draw(const IShader& shader)
+void OPlatform::draw(const IShader& shader)
 {
 	shader.use();
 
@@ -62,7 +62,7 @@ void Platform::draw(const IShader& shader)
 	shader.disuse();
 }
 
-Platform::~Platform()
+OPlatform::~OPlatform()
 {
 	glDeleteVertexArrays(1, &VAO);
 	glDeleteBuffers(1, &VBO);
