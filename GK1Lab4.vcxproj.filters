@@ -46,6 +46,9 @@
   <ItemGroup>
     <None Include="src\shaders\def.vert" />
     <None Include="src\shaders\def.frag" />
+    <None Include="src\objects\camera\camera_prop.fbx" />
+    <None Include="src\shaders\bag.frag" />
+    <None Include="src\shaders\bag.vert" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\shader.h">
@@ -79,6 +82,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -26,6 +26,9 @@ int App::init()
 
     glfwMakeContextCurrent(m_window);
     
+    // tell GLFW to capture our mouse
+    glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
     // ------------------
     // callbacks function
     // ------------------
@@ -33,6 +36,7 @@ int App::init()
     glfwSetFramebufferSizeCallback(m_window, framebuffer_size_callback);
     glfwSetKeyCallback(m_window, key_callback);
     glfwSetCursorPosCallback(m_window, cursor_position_callback);
+
 
     // ------------------
 

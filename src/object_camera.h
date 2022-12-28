@@ -19,4 +19,6 @@ public:
 private:
 
 	Camera m_camera;
+
+		
 };
