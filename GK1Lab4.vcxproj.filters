@@ -42,15 +42,26 @@
     <ClCompile Include="src\global.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\object_light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\objects\camera\camera_prop.fbx" />
-    <None Include="shaders\bag.frag" />
-    <None Include="shaders\bag.vert" />
+    <None Include="shaders\platform.frag" />
+    <None Include="shaders\platform.vert" />
     <None Include="shaders\biplane.frag" />
     <None Include="shaders\biplane.vert" />
     <None Include="shaders\def.frag" />
     <None Include="shaders\def.vert" />
+    <None Include="shaders\light_source.vert" />
+    <None Include="shaders\light_source.frag" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\shader.h">
@@ -90,6 +101,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\object_light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\object_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stb_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

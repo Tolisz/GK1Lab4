@@ -59,7 +59,7 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath)
     glDeleteShader(fragment);
 }
 
-unsigned int Shader::getID()
+unsigned int Shader::getID() const
 {
     return ID;
 }

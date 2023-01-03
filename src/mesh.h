@@ -5,7 +5,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
-#include "shader.h"
+#include "shader_interface.h"
 
 #include <string>
 #include <vector>
@@ -56,7 +56,7 @@ public:
     }
 
     // render the mesh
-    void Draw(Shader& shader)
+    void Draw(const IShader& shader)
     {
         // bind appropriate textures
         unsigned int diffuseNr = 1;

@@ -21,4 +21,6 @@ public:
     virtual void setMat2(const char* name, const glm::mat2& mat) const = 0;
     virtual void setMat3(const char* name, const glm::mat3& mat) const = 0;
     virtual void setMat4(const char* name, const glm::mat4& mat) const = 0;
+
+    virtual unsigned int getID() const = 0;
 };

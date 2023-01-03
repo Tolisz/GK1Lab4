@@ -3,8 +3,8 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-//#include "shader_interface.h"
-#include "object_interface.h"
+#include "shader_interface.h"
+//#include "object_interface.h"
 
 class OPlatform //: public IObject
 {

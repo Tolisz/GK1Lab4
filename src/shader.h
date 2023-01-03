@@ -29,7 +29,7 @@ public:
     void setMat3(const char* name, const glm::mat3& mat) const override;
     void setMat4(const char* name, const glm::mat4& mat) const override;
 
-    unsigned int getID();
+    unsigned int getID() const override;
 
 private:
 
