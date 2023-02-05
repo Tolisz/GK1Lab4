@@ -42,9 +42,6 @@
     <ClCompile Include="src\global.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\object_light.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\object_model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -101,9 +98,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\model.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\object_light.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\object_model.h">

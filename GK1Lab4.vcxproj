@@ -140,7 +140,6 @@
     <ClCompile Include="src\main_loop.cpp" />
     <ClCompile Include="src\model.cpp" />
     <ClCompile Include="src\object_camera.cpp" />
-    <ClCompile Include="src\object_light.cpp" />
     <ClCompile Include="src\object_model.cpp" />
     <ClCompile Include="src\object_platform.cpp" />
     <ClCompile Include="src\shader.cpp" />
@@ -167,7 +166,6 @@
     <ClInclude Include="src\model.h" />
     <ClInclude Include="src\object_camera.h" />
     <ClInclude Include="src\object_interface.h" />
-    <ClInclude Include="src\object_light.h" />
     <ClInclude Include="src\object_model.h" />
     <ClInclude Include="src\object_platform.h" />
     <ClInclude Include="src\shader.h" />

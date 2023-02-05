@@ -17,13 +17,17 @@ public:
 	void processMouse(GLFWwindow* window, double xposIn, double yposIn);
 	void processKeyboard(GLFWwindow* window/*, int key, int scancode, int action, int mods)*/);
 
+	void setPosition(glm::vec3 camera_position);
+	void setTarget(glm::vec3 target_position);
 	glm::mat4 GetViewMatrix();
+	glm::vec3 GetPosition();
 
 	friend std::ostream& operator<<(std::ostream& out, const OCamera& c);
 
 public:
 
 	bool isMovable = false;
+	bool hasTarget = false;
 
 private:
 

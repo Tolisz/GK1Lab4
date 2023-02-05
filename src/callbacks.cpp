@@ -14,15 +14,25 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
         G::vibration = !G::vibration;
     }
 
+    static bool ShadingChange = false;
+
     // Zmiana kamery
-    if (key == GLFW_KEY_1 && action == GLFW_PRESS)
+    if (!ShadingChange && key >= GLFW_KEY_1 && key <= GLFW_KEY_9)
     {
-        G::current_camera = &G::cameras.at(1);
+        G::current_camera = &G::cameras.at(key - GLFW_KEY_1 + 1);
     }
-    if (key == GLFW_KEY_2 && action == GLFW_PRESS)
+    else if (ShadingChange && key >= GLFW_KEY_1 && key <= GLFW_KEY_9)
     {
-        G::current_camera = &G::cameras.at(2);
+        ShadingChange = false;
+        std::uint8_t shading = static_cast<std::uint8_t>(key - GLFW_KEY_1 + 1);
+        G::shading = shading > 2 ? 2 : shading;
     }
+
+    if (key == GLFW_KEY_P)
+    {
+        ShadingChange = true;
+    }
+
 }
 
 void cursor_position_callback(GLFWwindow* window, double xpos, double ypos)

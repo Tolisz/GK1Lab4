@@ -65,6 +65,21 @@ public:
     glm::mat4 GetViewMatrix()
     {
         return glm::lookAt(Position, Position + Front, Up);
+    }   
+
+    void setPosition(glm::vec3 camera_position)
+    {
+        Position = camera_position;
+    }
+
+    void setTarget(glm::vec3 target_position)
+    {
+        Front = target_position - Position;
+    }
+
+    glm::vec3 GetPosition()
+    {
+        return Position;
     }
 
     void ProcessKeyboard(Camera_Movement direction, float deltaTime)

@@ -23,6 +23,21 @@ glm::mat4 OCamera::GetViewMatrix()
     return m_camera.GetViewMatrix();
 }
 
+void OCamera::setTarget(glm::vec3 target_position)
+{
+    m_camera.setTarget(target_position);
+}
+
+void OCamera::setPosition(glm::vec3 camera_position)
+{
+    m_camera.setPosition(camera_position);
+}
+
+glm::vec3 OCamera::GetPosition()
+{
+    return m_camera.GetPosition();
+}
+
 void OCamera::processMouse(GLFWwindow* window, double xposIn, double yposIn)
 {
     if (!isMovable)
