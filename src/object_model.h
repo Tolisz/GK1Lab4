@@ -25,8 +25,6 @@ private:
 
 	Model m_model;
 	OCamera* m_camera;
-
-
 };
 
 template<class Func>

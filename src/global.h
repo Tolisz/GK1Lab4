@@ -4,6 +4,7 @@
 #include <list>
 
 #include "object_camera.h"
+#include "object_lightCube.h"
 
 class G
 {
@@ -29,4 +30,5 @@ public:
 	static std::uint8_t shading; 
 
 	// źródła światła
+	static std::map<int, OLightCube> light_cubes;
 };

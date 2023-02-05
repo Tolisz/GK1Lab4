@@ -21,3 +21,4 @@ std::uint8_t G::shading = 2;
 
 
 // źródła światła
+std::map<int, OLightCube> G::light_cubes;

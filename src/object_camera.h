@@ -21,6 +21,8 @@ public:
 	void setTarget(glm::vec3 target_position);
 	glm::mat4 GetViewMatrix();
 	glm::vec3 GetPosition();
+	glm::vec3 GetTarget();
+	glm::vec3 GetFront();
 
 	friend std::ostream& operator<<(std::ostream& out, const OCamera& c);
 

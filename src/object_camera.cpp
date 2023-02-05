@@ -38,6 +38,16 @@ glm::vec3 OCamera::GetPosition()
     return m_camera.GetPosition();
 }
 
+glm::vec3 OCamera::GetTarget()
+{
+    return m_camera.GetTarget();
+}
+
+glm::vec3 OCamera::GetFront()
+{
+    return m_camera.Front;
+}
+
 void OCamera::processMouse(GLFWwindow* window, double xposIn, double yposIn)
 {
     if (!isMovable)
