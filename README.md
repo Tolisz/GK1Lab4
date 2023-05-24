@@ -2,7 +2,11 @@
 
 ## preview
 
-https://github.com/Tolisz/GK1Lab4/assets/84991525/717b81ce-af33-4170-a024-174329cb755c
+
+
+https://github.com/Tolisz/GK1Lab4/assets/84991525/68414a55-c3f3-4a75-9160-8a4141a559d8
+
+
 
 ## instruction 
 
