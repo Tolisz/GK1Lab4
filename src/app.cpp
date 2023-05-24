@@ -16,7 +16,7 @@ int App::init()
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
 
-    m_window = glfwCreateWindow(800, 600, "GKLab4", NULL, NULL);
+    m_window = glfwCreateWindow(1440, 1080, "GKLab4", NULL, NULL);
     if (m_window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
